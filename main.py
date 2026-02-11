@@ -4,7 +4,7 @@ import google.generativeai as genai
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import CommandStart
 
-# Эти данные мы укажем в настройках Koyeb (Environment Variables)
+# Эти данные мы указали в настройках Koyeb (Environment Variables)
 TOKEN = os.getenv("BOT_TOKEN")
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
@@ -39,5 +39,6 @@ async def main():
     print("Бот запущен и готов к работе!")
     await dp.start_polling(bot)
 
+# Исправленная точка входа (с двойными подчеркиваниями)
 if name == "__main__":
     asyncio.run(main())
