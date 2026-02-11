@@ -9,7 +9,7 @@ TOKEN = os.getenv("BOT_TOKEN")
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Настройка модели
-model = genai.GenerativeModel('gemini-2.5-flash-lit')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
